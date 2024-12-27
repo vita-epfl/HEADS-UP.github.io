@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HEADS-UP: Head-Mounted Egocentric Dataset for Trajectory Prediction in Blind Assistance Systems</title>
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <link rel="icon" href="./static/images/favicon.svg">
+  <style>
+      .image-container {
+        display: grid; /* Arrange images in a grid */
+        grid-template-columns: repeat(2, 1fr); /* Two images per row */
+        gap: 10px; /* Add spacing between images */
+        justify-content: center; /* Center the grid */
+        margin-top: 20px; /* Add spacing from the top */
+      }
+      .video-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Four equal columns for videos */
+        gap: 10px; /* Space between items */
+        margin: 20px 0; /* Add vertical spacing between sections */
+        align-items: stretch; /* Ensure items fill the grid cell vertically */
+        justify-items: stretch; /* Ensure items fill the grid cell horizontally */
+      }
+      .video-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* Center align descriptions and videos */
+    }
+
+    .video-description {
+      margin-bottom: 10px;
+      font-weight: bold; /* Make the description stand out */
+    }
+
+    .section-description {
+      margin-bottom: 30px;
+      font-size: 1.2em;
+      color: #555; /* Subtle color to differentiate from headings */
+    }
+      .content {
+      margin-bottom: 20px; /* Add space between sections (subtitles and videos) */
+      }
+      video, img {
+        width: 100%; /* Make both videos and GIFs fill their grid cells */
+        height: 100%; /* Fill the height of the grid cell */
+        border: 1px solid #ccc; /* Optional: Add a border */
+        border-radius: 5px; /* Optional: Add rounded corners */
+        object-fit: cover; /* Ensure content fills the container */
+      }
+     
+      .pseudo-video-container {
+      display: flex; /* Use flexbox for a row layout */
+      justify-content: space-between; /* Space out videos evenly */
+      align-items: center; /* Align videos vertically */
+      gap: 20px; /* Space between videos */
+      }
+      .pseudo-video-container video {
+      width: 50%; /* Each video takes 50% of the row */
+      height: 500px; /* Set a large height for the videos */
+      max-height: 100%; /* Prevent overflow */
+      border: 1px solid #ccc; /* Optional: Add a border */
+      border-radius: 5px; /* Optional: Add rounded corners */
+      object-fit: cover; /* Ensures the video content scales nicely */
+      }
+  </style>
+</head>
+<body>
+  <div style="background-color: #e6ffe6; padding: 10px; text-align: center; color: green; font-weight: bold;">
+    We recommend using Chrome for the best experience. Videos might not work on Safari.
+  </div>
+
+<section class="hero title-section" style="background-color: #f0f0f0;">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1">
+            HEADS-UP <br>
+            <span style="font-size: 0.8em; font-weight: normal;">
+              Head-Mounted Egocentric Dataset for Trajectory Prediction in Blind Assistance Systems
+            </span>
+          </h1>
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- Paper Link -->
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2409.20324" 
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              
+              <!-- Dataset Link -->
+              <span class="link-block">
+                <a href="https://huggingface.co/datasets/Yassaman/HEADS-UP" 
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Dataset</span>
+                </a>
+              </span>
+              
+              <!-- GitHub Link -->
+              <span class="link-block">
+                <a href="https://github.com/vita-epfl/HEADS-UP" 
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            <strong>HEADS-UP</strong> is the first egocentric dataset collected from head-mounted cameras, designed specifically for trajectory prediction in blind assistance systems. 
+            Given the large population of blind and visually impaired individuals, there is an increasing need for intelligent assistive tools that can provide real-time warnings about potential collisions with dynamic obstacles. 
+            These systems depend on algorithms that can predict the trajectories of moving objects, such as pedestrians, to issue timely hazard alerts. 
+            However, current datasets do not capture the essential information from the perspective of a blind individual. 
+            To bridge this gap, we introduce <strong>HEADS-UP</strong>, a novel dataset specifically designed for trajectory prediction in this context.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container has-text-centered">
+    <h2 class="title is-2">Examples</h2>
+    
+   </p>
+   <div class="video-container">
+     <video controls loop autoplay muted>
+       <source src="./static/videos/video1.MP4.mov" type="video/mp4">
+     </video>
+     <video controls loop autoplay muted>
+       <source src="./static/videos/video2.MP4.mov" type="video/mp4">
+     </video>
+     <video controls loop autoplay muted>
+       <source src="./static/videos/video3.MP4.mov" type="video/mp4">
+     </video>
+     <video controls loop autoplay muted>
+       <source src="./static/videos/video4.MP4.mov" type="video/mp4">
+     </video>
+   </div>
+ </div>
+</section>
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{haghighi2024heads,
+      title={HEADS-UP: Head-Mounted Egocentric Dataset for Trajectory Prediction in Blind Assistance Systems},
+      author={Haghighi, Yasaman and Demonsant, Celine and Chalimourdas, Panagiotis and Naeini, Maryam Tavasoli and Munoz, Jhon Kevin and Bacca, Bladimir and Suter, Silvan and Gani, Matthieu and Alahi, Alexandre},
+      journal={arXiv preprint arXiv:2409.20324},
+      year={2024}
+    }</code></pre>
+  </div>
+</section>
+
+</body>
+</html>
